@@ -1,0 +1,161 @@
+ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p, img{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+html {
+	background: url(../img/cloudyDay.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.page-wrap {
+
+	.current-weather-wrap {
+		position: absolute;
+		margin-top: 20px;
+		margin-left: -200px;
+		left: 50%;
+		width: 400px;
+		height: 500px;
+		display: inline-block;
+	}
+
+	#icon {
+		color: #fff;
+		width: 200px;
+		height: 200px;
+		background-size: 100% 100%;
+		margin: auto;
+	}
+	#overview {
+		font-family: "Open Sans Condensed";
+		color: #fff;
+		text-align: center;
+		font-size: 28px;
+	}
+	#temp {
+		text-align: center;
+		color: #fff;
+		font-size: 120px;
+		font-family: "Open Sans Condensed";
+	}
+	#feelsLikeTemp {
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		font-family: "Open Sans Condensed";
+	}
+	#humidity {
+		font-family: "Open Sans Condensed";
+		color: #fff;
+		text-align: center;
+		font-size: 20px;
+	}
+	#windSpeed {
+		font-family: "Open Sans Condensed";
+		color: #fff;
+		text-align: center;
+		font-size: 20px;
+	}
+	#rainProbability {
+		font-family: "Open Sans Condensed";
+		color: #fff;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+
+.hourly-wrap {
+	width: 400px;
+	display: inline-block;
+	float: left;
+	margin: 50px 0 0 50px;
+}
+
+.hourly-item {
+	border-radius: 5px;
+	list-style-type: none;
+	height: 50px;
+	width: 95%;
+	background: rgba(0, 0, 255, 0.3);
+	padding: 10px;
+	margin-top: 2px;
+	font-family: "Open Sans Condensed";
+
+	#hourlyTemp {
+		color: #fff;
+		font-size: 50px;
+		margin-top: -10px;
+		display: inline-block;
+	}
+	#hourlyChanceOfRain {
+		position: absolute;
+		margin: -10px 0 0 45px;
+		color: #fff;
+		display: inline-block;
+		font-size: 25px;
+	}
+	#hourlyHumidity {
+		position: absolute;
+		color: #fff;
+		display: inline-block;
+		font-size: 18px;
+		margin: 30px 0 0 80px;
+	}
+	#hourlyIcon {
+		background-size: 100% 100%;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		float: right;
+	}
+}
+
+.daily-wrap {
+	width: 400px;
+	display: inline-block;
+	float: right;
+	margin: 50px 50px 0 0;
+
+}
+
+.daily-item {
+	border-radius: 5px;
+	list-style-type: none;
+	height: 50px;
+	width: 95%;
+	background: rgba(0, 0, 255, 0.3);
+	padding: 10px;
+	margin-top: 2px;
+	font-family: "Open Sans Condensed";
+
+	#dailyTemp {
+		color: #fff;
+		font-size: 50px;
+		margin-top: -10px;
+		display: inline-block;
+	}
+	#dailyChanceOfRain {
+		position: absolute;
+		margin: -10px 0 0 45px;
+		color: #fff;
+		display: inline-block;
+		font-size: 25px;
+	}
+	#dailyHumidity {
+		position: absolute;
+		color: #fff;
+		display: inline-block;
+		font-size: 18px;
+		margin: 30px 0 0 80px;
+	}
+	#dailyIcon {
+		background-size: 100% 100%;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		float: right;
+	}
+}
+
