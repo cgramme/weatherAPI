@@ -8,6 +8,11 @@ html {
     background-attachment: fixed;
     background-size: 100% 100%;
     font-family: "Open Sans Condensed";
+    @media screen and (max-width: 1000px) {
+    	background: url(../img/cloudyDay.jpg) no-repeat;
+    	background-attachment: fixed;
+
+  	}
 }
 
 .page-wrap {
@@ -18,15 +23,14 @@ html {
 		margin-left: -200px;
 		left: 50%;
 		width: 400px;
-		height: 500px;
 		display: block;
-		@media screen and (max-width: 1000px) {
+		@media screen and (max-width: 1200px) {
 	    	float: none;
-	    	margin: auto;
 	    	display: block;
 	    	position: relative;
-	    	margin: auto;
+	    	margin: 0 auto 20px auto;
 	    	left: auto;
+	    	width: 100%;
 	  	}
 
 	}
@@ -44,7 +48,7 @@ html {
 		text-align: center;
 		font-size: 28px;
 		text-shadow: 1px 1px 5px #000;
-		@media screen and (max-width: 1000px) {
+		@media screen and (max-width: 1200px) {
 	    	font-size: 20px;
 	  	}
 	}
@@ -54,7 +58,7 @@ html {
 		font-size: 120px;
 		font-family: "Open Sans Condensed";
 		text-shadow: 1px 1px 20px #555;
-		@media screen and (max-width: 1000px) {
+		@media screen and (max-width: 1200px) {
 	    	font-size: 75px;
 	  	}
 	}
@@ -93,10 +97,16 @@ html {
 	display: inline-block;
 	float: left;
 	margin: 20px 0 0 50px;
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1200px) {
     	float: none;
     	margin: auto;
     	display: block;
+  	}
+  	@media screen and (max-width: 450px) {
+    	float: none;
+    	margin: auto;
+    	display: block;
+    	width: 95%;
   	}
 }
 
@@ -114,26 +124,22 @@ html {
 	background: rgba(0, 0, 255, 0.3);
 	padding: 10px;
 	margin-top: 2px;
+	text-align: center;
 
 	#hourlyTemp {
 		color: #fff;
 		font-size: 50px;
-		margin-top: -10px;
+		margin-top: -70px;
 		display: inline-block;
+		float: left;
 	}
 	#hourlyChanceOfRain {
-		position: absolute;
-		margin: -10px 0 0 45px;
 		color: #fff;
-		display: inline-block;
 		font-size: 25px;
 	}
 	#hourlyHumidity {
-		position: absolute;
 		color: #fff;
-		display: inline-block;
 		font-size: 18px;
-		margin: 30px 0 0 80px;
 	}
 	#hourlyIcon {
 		background-size: 100% 100%;
@@ -141,6 +147,7 @@ html {
 		height: 50px;
 		display: inline-block;
 		float: right;
+		margin-top: -60px;
 	}
 }
 
@@ -149,10 +156,16 @@ html {
 	display: inline-block;
 	float: right;
 	margin: 20px 50px 0 0;
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1200px) {
     	float: none;
     	margin: auto;
     	display: block;
+  	}
+  	@media screen and (max-width: 450px) {
+    	float: none;
+    	margin: auto;
+    	display: block;
+    	width: 95%;
   	}
 
 }
@@ -171,27 +184,22 @@ html {
 	background: rgba(0, 0, 255, 0.3);
 	padding: 10px;
 	margin-top: 2px;
-	font-family: "Open Sans Condensed";
+	text-align: center;
 
 	#dailyTemp {
 		color: #fff;
 		font-size: 50px;
-		margin-top: -10px;
+		margin-top: -70px;
 		display: inline-block;
+		float: left;
 	}
 	#dailyChanceOfRain {
-		position: absolute;
-		margin: -10px 0 0 45px;
 		color: #fff;
-		display: inline-block;
 		font-size: 25px;
 	}
 	#dailyHumidity {
-		position: absolute;
 		color: #fff;
-		display: inline-block;
 		font-size: 18px;
-		margin: 30px 0 0 80px;
 	}
 	#dailyIcon {
 		background-size: 100% 100%;
@@ -199,6 +207,7 @@ html {
 		height: 50px;
 		display: inline-block;
 		float: right;
+		margin-top: -60px;
 	}
 }
 

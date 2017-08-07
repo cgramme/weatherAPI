@@ -8,6 +8,10 @@ html {
   background-attachment: fixed;
   background-size: 100% 100%;
   font-family: "Open Sans Condensed"; }
+  @media screen and (max-width: 1000px) {
+    html {
+      background: url(../img/cloudyDay.jpg) no-repeat;
+      background-attachment: fixed; } }
 
 .page-wrap .current-weather-wrap {
   position: absolute;
@@ -15,16 +19,15 @@ html {
   margin-left: -200px;
   left: 50%;
   width: 400px;
-  height: 500px;
   display: block; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     .page-wrap .current-weather-wrap {
       float: none;
-      margin: auto;
       display: block;
       position: relative;
-      margin: auto;
-      left: auto; } }
+      margin: 0 auto 20px auto;
+      left: auto;
+      width: 100%; } }
 .page-wrap #icon {
   color: #fff;
   width: 200px;
@@ -37,7 +40,7 @@ html {
   text-align: center;
   font-size: 28px;
   text-shadow: 1px 1px 5px #000; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     .page-wrap #overview {
       font-size: 20px; } }
 .page-wrap #temp {
@@ -46,7 +49,7 @@ html {
   font-size: 120px;
   font-family: "Open Sans Condensed";
   text-shadow: 1px 1px 20px #555; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     .page-wrap #temp {
       font-size: 75px; } }
 .page-wrap #feelsLikeTemp {
@@ -79,11 +82,17 @@ html {
   display: inline-block;
   float: left;
   margin: 20px 0 0 50px; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     .hourly-wrap {
       float: none;
       margin: auto;
       display: block; } }
+  @media screen and (max-width: 450px) {
+    .hourly-wrap {
+      float: none;
+      margin: auto;
+      display: block;
+      width: 95%; } }
 
 .hourly-title {
   color: #fff;
@@ -97,41 +106,44 @@ html {
   width: 95%;
   background: rgba(0, 0, 255, 0.3);
   padding: 10px;
-  margin-top: 2px; }
+  margin-top: 2px;
+  text-align: center; }
   .hourly-item #hourlyTemp {
     color: #fff;
     font-size: 50px;
-    margin-top: -10px;
-    display: inline-block; }
-  .hourly-item #hourlyChanceOfRain {
-    position: absolute;
-    margin: -10px 0 0 45px;
-    color: #fff;
+    margin-top: -70px;
     display: inline-block;
+    float: left; }
+  .hourly-item #hourlyChanceOfRain {
+    color: #fff;
     font-size: 25px; }
   .hourly-item #hourlyHumidity {
-    position: absolute;
     color: #fff;
-    display: inline-block;
-    font-size: 18px;
-    margin: 30px 0 0 80px; }
+    font-size: 18px; }
   .hourly-item #hourlyIcon {
     background-size: 100% 100%;
     width: 50px;
     height: 50px;
     display: inline-block;
-    float: right; }
+    float: right;
+    margin-top: -60px; }
 
 .daily-wrap {
   width: 400px;
   display: inline-block;
   float: right;
   margin: 20px 50px 0 0; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     .daily-wrap {
       float: none;
       margin: auto;
       display: block; } }
+  @media screen and (max-width: 450px) {
+    .daily-wrap {
+      float: none;
+      margin: auto;
+      display: block;
+      width: 95%; } }
 
 .daily-title {
   color: #fff;
@@ -146,29 +158,25 @@ html {
   background: rgba(0, 0, 255, 0.3);
   padding: 10px;
   margin-top: 2px;
-  font-family: "Open Sans Condensed"; }
+  text-align: center; }
   .daily-item #dailyTemp {
     color: #fff;
     font-size: 50px;
-    margin-top: -10px;
-    display: inline-block; }
-  .daily-item #dailyChanceOfRain {
-    position: absolute;
-    margin: -10px 0 0 45px;
-    color: #fff;
+    margin-top: -70px;
     display: inline-block;
+    float: left; }
+  .daily-item #dailyChanceOfRain {
+    color: #fff;
     font-size: 25px; }
   .daily-item #dailyHumidity {
-    position: absolute;
     color: #fff;
-    display: inline-block;
-    font-size: 18px;
-    margin: 30px 0 0 80px; }
+    font-size: 18px; }
   .daily-item #dailyIcon {
     background-size: 100% 100%;
     width: 50px;
     height: 50px;
     display: inline-block;
-    float: right; }
+    float: right;
+    margin-top: -60px; }
 
 /*# sourceMappingURL=style.css.map */
