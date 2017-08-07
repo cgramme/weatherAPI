@@ -4,15 +4,25 @@
 	font-weight: normal;
 }
 html {
-	background: url(../img/cloudyDay.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
     font-family: "Open Sans Condensed";
-    @media screen and (max-width: 1000px) {
-    	background: url(../img/cloudyDay.jpg) no-repeat;
-    	background-attachment: fixed;
+}
 
-  	}
+.background-image {
+	position: fixed;
+	background: url(../img/cloudyDay.jpg) no-repeat;
+	background-attachment: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	@media screen and (max-width: 800px) {
+		top: 0;
+		left: 0;
+		background: url(../img/smallBlueSky.jpg) no-repeat;
+		background-attachment: fixed;
+		height: 725px;
+		width: 775px;
+    }
 }
 
 .page-wrap {
@@ -47,7 +57,7 @@ html {
 		color: #fff;
 		text-align: center;
 		font-size: 28px;
-		text-shadow: 1px 1px 5px #000;
+		margin-top: 10px;
 		@media screen and (max-width: 1200px) {
 	    	font-size: 20px;
 	  	}
@@ -57,7 +67,6 @@ html {
 		color: #fff;
 		font-size: 120px;
 		font-family: "Open Sans Condensed";
-		text-shadow: 1px 1px 20px #555;
 		@media screen and (max-width: 1200px) {
 	    	font-size: 75px;
 	  	}
@@ -67,33 +76,31 @@ html {
 		color: #fff;
 		font-size: 20px;
 		font-family: "Open Sans Condensed";
-		text-shadow: 1px 1px 5px #000;
 	}
 	#humidity {
 		font-family: "Open Sans Condensed";
 		color: #fff;
 		text-align: center;
 		font-size: 20px;
-		text-shadow: 1px 1px 5px #000;
 	}
 	#windSpeed {
 		font-family: "Open Sans Condensed";
 		color: #fff;
 		text-align: center;
 		font-size: 20px;
-		text-shadow: 1px 1px 5px #000;
 	}
 	#rainProbability {
 		font-family: "Open Sans Condensed";
 		color: #fff;
 		text-align: center;
 		font-size: 20px;
-		text-shadow: 1px 1px 5px #000;
 	}
 }
 
 .hourly-wrap {
+	position: absolute;
 	width: 400px;
+	height: 800px;
 	display: inline-block;
 	float: left;
 	margin: 20px 0 0 50px;
@@ -101,6 +108,8 @@ html {
     	float: none;
     	margin: auto;
     	display: block;
+    	left:0;
+    	right:0;
   	}
   	@media screen and (max-width: 450px) {
     	float: none;
@@ -125,6 +134,9 @@ html {
 	padding: 10px;
 	margin-top: 2px;
 	text-align: center;
+	@media screen and (max-width: 800px) {
+		background: rgba(0, 0, 255, 0.5);
+	}
 
 	#hourlyTemp {
 		color: #fff;
@@ -152,14 +164,17 @@ html {
 }
 
 .daily-wrap {
+	position: absolute;
 	width: 400px;
 	display: inline-block;
-	float: right;
+	right: 0;
 	margin: 20px 50px 0 0;
 	@media screen and (max-width: 1200px) {
     	float: none;
     	margin: auto;
     	display: block;
+    	left:0;
+    	right:0;
   	}
   	@media screen and (max-width: 450px) {
     	float: none;
@@ -185,6 +200,9 @@ html {
 	padding: 10px;
 	margin-top: 2px;
 	text-align: center;
+	@media screen and (max-width: 800px) {
+		background: rgba(0, 0, 255, 0.5);
+	}
 
 	#dailyTemp {
 		color: #fff;
