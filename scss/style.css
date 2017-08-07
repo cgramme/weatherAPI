@@ -6,7 +6,8 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p, img {
 html {
   background: url(../img/cloudyDay.jpg) no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  font-family: "Open Sans Condensed"; }
 
 .page-wrap .current-weather-wrap {
   position: absolute;
@@ -15,7 +16,15 @@ html {
   left: 50%;
   width: 400px;
   height: 500px;
-  display: inline-block; }
+  display: block; }
+  @media screen and (max-width: 1000px) {
+    .page-wrap .current-weather-wrap {
+      float: none;
+      margin: auto;
+      display: block;
+      position: relative;
+      margin: auto;
+      left: auto; } }
 .page-wrap #icon {
   color: #fff;
   width: 200px;
@@ -26,38 +35,60 @@ html {
   font-family: "Open Sans Condensed";
   color: #fff;
   text-align: center;
-  font-size: 28px; }
+  font-size: 28px;
+  text-shadow: 1px 1px 5px #000; }
+  @media screen and (max-width: 1000px) {
+    .page-wrap #overview {
+      font-size: 20px; } }
 .page-wrap #temp {
   text-align: center;
   color: #fff;
   font-size: 120px;
-  font-family: "Open Sans Condensed"; }
+  font-family: "Open Sans Condensed";
+  text-shadow: 1px 1px 20px #555; }
+  @media screen and (max-width: 1000px) {
+    .page-wrap #temp {
+      font-size: 75px; } }
 .page-wrap #feelsLikeTemp {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Open Sans Condensed"; }
+  font-family: "Open Sans Condensed";
+  text-shadow: 1px 1px 5px #000; }
 .page-wrap #humidity {
   font-family: "Open Sans Condensed";
   color: #fff;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #000; }
 .page-wrap #windSpeed {
   font-family: "Open Sans Condensed";
   color: #fff;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #000; }
 .page-wrap #rainProbability {
   font-family: "Open Sans Condensed";
   color: #fff;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #000; }
 
 .hourly-wrap {
   width: 400px;
   display: inline-block;
   float: left;
-  margin: 50px 0 0 50px; }
+  margin: 20px 0 0 50px; }
+  @media screen and (max-width: 1000px) {
+    .hourly-wrap {
+      float: none;
+      margin: auto;
+      display: block; } }
+
+.hourly-title {
+  color: #fff;
+  font-size: 40px;
+  text-align: center; }
 
 .hourly-item {
   border-radius: 5px;
@@ -66,8 +97,7 @@ html {
   width: 95%;
   background: rgba(0, 0, 255, 0.3);
   padding: 10px;
-  margin-top: 2px;
-  font-family: "Open Sans Condensed"; }
+  margin-top: 2px; }
   .hourly-item #hourlyTemp {
     color: #fff;
     font-size: 50px;
@@ -96,7 +126,17 @@ html {
   width: 400px;
   display: inline-block;
   float: right;
-  margin: 50px 50px 0 0; }
+  margin: 20px 50px 0 0; }
+  @media screen and (max-width: 1000px) {
+    .daily-wrap {
+      float: none;
+      margin: auto;
+      display: block; } }
+
+.daily-title {
+  color: #fff;
+  font-size: 40px;
+  text-align: center; }
 
 .daily-item {
   border-radius: 5px;
