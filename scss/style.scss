@@ -11,6 +11,7 @@ html {
 	position: fixed;
 	background: url(../img/cloudyDay.jpg) no-repeat;
 	background-attachment: fixed;
+	background-size: 100% 100%;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -20,12 +21,24 @@ html {
 		left: 0;
 		background: url(../img/smallBlueSky.jpg) no-repeat;
 		background-attachment: fixed;
+		background-size: auto;
 		height: 725px;
 		width: 775px;
     }
 }
 
+.loading {
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	top: 200px;
+	left: 50%;
+	margin-left: -200px;
+	background-image: url(../img/loading.gif);
+}
+
 .page-wrap {
+	display: none;
 
 	.current-weather-wrap {
 		position: absolute;
