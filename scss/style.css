@@ -155,9 +155,6 @@ html {
       right: 0; } }
   @media screen and (max-width: 450px) {
     .daily-wrap {
-      float: none;
-      margin: auto;
-      display: block;
       width: 95%; } }
 
 .daily-title {
