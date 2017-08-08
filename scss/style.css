@@ -16,7 +16,7 @@ html {
   right: 0; }
   @media screen and (max-width: 800px) {
     .background-image {
-      top: 0;
+      top: -50px;
       left: 0;
       background: url(../img/smallBlueSky.jpg) no-repeat;
       background-attachment: fixed;
@@ -149,7 +149,7 @@ html {
   @media screen and (max-width: 1200px) {
     .daily-wrap {
       float: none;
-      margin: auto;
+      margin: 650px auto 20px auto;
       display: block;
       left: 0;
       right: 0; } }
